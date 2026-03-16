@@ -75,4 +75,3 @@ Die deutsche Übersetzung umfasst alle Nachrichtentypen:
 
 - **de.json**: Hauptübersetzungsdatei (955 Zeilen)
 - **messages/**: 142 Nunjucks-Template-Dateien (.njk)
-- **translate-messages.js**: Helper-Script für Bulk-Übersetzungen (im Root-Verzeichnis)
