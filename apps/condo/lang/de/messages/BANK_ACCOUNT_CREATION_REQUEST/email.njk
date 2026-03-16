@@ -1,0 +1,10 @@
+Gerade auf {{ env.serverUrl }} hat unser Kunde eine Anfrage zur Eröffnung eines Bankkontos für ein Objekt hinterlassen.
+Objektadresse: {{ message.meta.propertyAddress }}
+
+Kunde: {{ message.meta.name }}
+UID: {{ message.meta.tin }}
+Anfrage gestellt von: {{ message.meta.bankAccountClient.name }}
+Telefon: {{ message.meta.bankAccountClient.phone }}
+E-Mail: {{ message.meta.bankAccountClient.email }}
+
+Bitte kontaktieren Sie den Kunden, er freut sich darauf 🤗

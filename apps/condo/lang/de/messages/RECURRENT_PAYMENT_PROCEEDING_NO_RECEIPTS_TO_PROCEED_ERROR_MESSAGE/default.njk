@@ -1,0 +1,5 @@
+{%- if message.meta.data.lastTry -%}
+Es gibt keine neuen Abrechnungen zur Zahlung. Sie können die Auto-Payment-Einstellungen in der App ändern.
+{%- else -%}
+Es gibt heute keine neuen Abrechnungen zur Zahlung. Wir versuchen die Abbuchung morgen erneut.
+{% endif %}

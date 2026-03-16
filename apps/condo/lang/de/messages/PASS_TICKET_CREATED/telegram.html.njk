@@ -1,0 +1,19 @@
+{%- if message.meta.data.passTicketType == "guest" -%}
+<b>Neue Passierkarte für Gast Nr. {{ message.meta.data.number }}</b>
+Organisation: {{ message.meta.data.organizationName }}
+Adresse: {{ message.meta.data.propertyAddress }}
+Einheit: {{ message.meta.data.unit }}
+Kunde: {{ message.meta.data.client }}
+Gast: {{ message.meta.data.guest }}
+Besuchsdatum: {{ message.meta.data.openAt }}
+Kommentar: {{ message.meta.data.comment }}
+{%- else -%}
+<b>Neue Passierkarte für Fahrzeug Nr. {{ message.meta.data.number }}</b>
+Organisation: {{ message.meta.data.organizationName }}
+Adresse: {{ message.meta.data.propertyAddress }}
+Einheit: {{ message.meta.data.unit }}
+Kunde: {{ message.meta.data.client }}
+Fahrzeugnummer: {{ message.meta.data.vehicle }}
+Besuchsdatum: {{ message.meta.data.openAt }}
+Kommentar: {{ message.meta.data.comment }}
+{% endif -%}

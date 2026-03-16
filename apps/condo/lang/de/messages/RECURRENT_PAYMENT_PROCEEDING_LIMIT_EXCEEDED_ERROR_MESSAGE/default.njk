@@ -1,0 +1,5 @@
+{%- if message.meta.data.lastTry -%}
+Der Abrechnungsbetrag übersteigt das Auto-Payment-Limit. Prüfen Sie die Auto-Payment-Einstellungen.
+{%- else -%}
+Erhöhen Sie das Auto-Payment-Limit, wir versuchen die Abbuchung morgen erneut.
+{% endif %}
