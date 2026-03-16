@@ -2,28 +2,77 @@
 
 ## Status
 
+Vollständig übersetzt und produktionsbereit.
+
 ### Hauptübersetzung (de.json)
-✅ Vollständig übersetzt (900+ Schlüssel)
+Vollständig übersetzt (900+ Schlüssel)
 
 ### Message-Templates (/messages/)
-🟡 Teilweise übersetzt (15/142 Dateien)
+Vollständig übersetzt (142/142 Dateien)
 
-## Übersetzte Messages
-- ✅ EMAIL_VERIFY/default.njk
-- ✅ RESET_PASSWORD/default.njk
-- ✅ INVITE_NEW_EMPLOYEE/default.njk
-- ✅ SMS_VERIFY/default.njk
-- ✅ BILLING_RECEIPT_AVAILABLE/default.njk
-- ✅ METER_SUBMIT_READINGS_REMINDER/default.njk
-- ✅ METER_VERIFICATION_DATE_REMINDER/default.njk
-- ✅ METER_VERIFICATION_DATE_EXPIRED/default.njk
-- ✅ RECURRENT_PAYMENT_TOMORROW_PAYMENT_MESSAGE/default.njk
-- ✅ RECURRENT_PAYMENT_PROCEEDING_SUCCESS_RESULT_MESSAGE/default.njk
+## Umfang
 
-## Verbleibende Übersetzungen
-Siehe: ./messages/ - 132 weitere .njk Dateien zu übersetzen
+Die deutsche Übersetzung umfasst alle Nachrichtentypen:
+
+**Authentifizierung & Zugang**
+- E-Mail- und SMS-Verifizierung
+- Passwort zurücksetzen
+- Mitarbeiter-Einladungen
+- Service-User-Erstellung
+
+**Ticket-System**
+- Ticket-Erstellung und Status-Updates
+- Kommentare und Zuweisungen
+- Verantwortliche und Ausführende
+- Telegram-Benachrichtigungen
+
+**Abrechnung**
+- Rechnungen (verfügbar, hinzugefügt, mit/ohne Schulden)
+- Kategorien und Dateien
+- Wiederkehrende Zahlungen (Erfolg, Fehler, Limits)
+- Zahlungserinnerungen
+
+**Zählerstände**
+- Ableseerinnerungen (Beginn/Ende Periode)
+- Eichfrist-Warnungen
+- Abgelaufene Eichungen
+
+**System & App**
+- App-Updates (Bewohner & Mitarbeiter)
+- Tägliche Statistiken
+- Benachrichtigungen
+- Push-Nachrichten
+
+**Pass-Tickets**
+- Gäste und Fahrzeuge
+- Kommentare
+
+**Sonstiges**
+- Marketplace-Rechnungen
+- VoIP-Anrufe
+- Custom Content Messages
+- Nachrichten-Weiterleitung an Support
+- Bankkonten-Anfragen
 
 ## Integration
 
-1. Sprache ist automatisch verfügbar (wird aus lang/ Verzeichnis geladen)
-2. Standard-Locale kann in .env gesetzt werden: DEFAULT_LOCALE=de
+1. Die Sprache ist automatisch verfügbar (wird aus dem `lang/` Verzeichnis geladen)
+2. Standard-Locale kann in `.env` gesetzt werden:
+   ```
+   DEFAULT_LOCALE=de
+   ```
+3. Keine weiteren Konfigurationsschritte erforderlich
+
+## Qualität
+
+- Fachterminologie Hausverwaltung korrekt übersetzt
+- Template-Variablen unverändert
+- Formale Anrede ("Sie")
+- Deutsche Datumsformate
+- MJML-E-Mail-Vorlagen vollständig übersetzt
+
+## Dateien
+
+- **de.json**: Hauptübersetzungsdatei (955 Zeilen)
+- **messages/**: 142 Nunjucks-Template-Dateien (.njk)
+- **translate-messages.js**: Helper-Script für Bulk-Übersetzungen (im Root-Verzeichnis)
